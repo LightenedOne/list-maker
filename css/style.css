@@ -38,12 +38,32 @@ html, body {
     margin: 0 0 10px 0;
 }
 
-#list li {
+#users-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#users-list li {
+    grid-column-start: 6;
     text-transform: capitalize;
+    font-size: 1.2em;
+    width: 100%;
+    line-height: 2em;
 }
 
 #enter-button {
     width: 35%;
     margin: 0 0 10px 0;
+}
 
+.done {
+    text-decoration: line-through;
+    user-select: none;
+}
+
+.remove-button {
+    width: 20%;
+    border-radius: 360px;
+    border-color: blue;
 }
